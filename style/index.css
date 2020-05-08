@@ -63,20 +63,44 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size:1.6rem;
 }
-
-h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+h1 {
+    font-size:4rem;
+    margin-bottom: 1%;
+    font-family: 'Rubik', sans-serif;
+}
+}
+h2, h3, h4, h5 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5%;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
-    line-height: 1.4;
+    line-height: 1%;
 }
 
 .container {
-    width: 800px;
+    width: 80%;
     margin: 0 auto;
+}
+
+header nav{
+    padding:0.5%;
+    width: 80%;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width:20%;
+}
+
+.navButton{
+    width: 80%;
+    display:flex;
+    justify-content: space-evenly;
 }
 
 .top-content {
