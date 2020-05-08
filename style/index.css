@@ -59,19 +59,20 @@ html{
 }
 
 body {
+    width: 80%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
     font-size:1.6rem;
 }
 h1 {
-    font-size:4rem;
+    font-size:5rem;
     margin-bottom: 1%;
     font-family: 'Rubik', sans-serif;
 }
 }
 h2, h3, h4, h5 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5%;
+    font-size: 3rem;
+    margin-bottom: 1%;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -139,7 +140,7 @@ header nav{
 .box{
     width: 100px;
     height: 100px;
-    border: 1px solid purple;
+    border: 0px solid purple;
     margin: 1%;
 }
 
@@ -155,11 +156,55 @@ header nav{
     justify-content: center;
 }
 
-.box-one{
-    background-color: purple;
+#one{
+    background-color: teal;
+    color: #ffffff
+}
+
+#two{
+    background-color: yellowgreen;
     color: white
 }
 
+#three{
+    background-color: grey;
+    color: white
+}
+
+#four{
+    background-color: coral;
+    color: white
+}
+
+#five{
+    background-color: red;
+    color: white
+}
+
+#six{
+    background-color: green;
+    color: white
+}
+
+#seven{
+    background-color: fuchsia;
+    color: white
+}
+
+#eight{
+    background-color: violet;
+    color: white
+}
+
+#nine{
+    background-color: navy;
+    color: white
+}
+
+#ten{
+    background-color: lightblue;
+    color: white
+}
 
 .bottom-content {
     display: flex;
@@ -189,7 +234,20 @@ footer nav {
     font-size: 14px;
 }
 
+footer div{
+    width:40%;
+}
+
 footer nav a {
     color: white;
     text-decoration: none;
 }
+
+
+@media(max-width: 800px) {
+   
+    }
+
+@media(max-width: 500px) {
+   
+    }
