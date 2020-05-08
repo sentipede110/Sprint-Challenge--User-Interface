@@ -65,13 +65,13 @@ body {
     font-size:1.6rem;
 }
 h1 {
-    font-size:5rem;
+    font-size:2.5rem;
     margin-bottom: 1%;
     font-family: 'Rubik', sans-serif;
 }
 }
 h2, h3, h4, h5 {
-    font-size: 3rem;
+    font-size:1.5rem;
     margin-bottom: 1%;
     font-family: 'Rubik', sans-serif;
 }
@@ -138,8 +138,8 @@ header nav{
 }
 
 .box{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border: 0px solid purple;
     margin: 1%;
 }
@@ -245,9 +245,61 @@ footer nav a {
 
 
 @media(max-width: 800px) {
-   
-    }
+.all-boxes{
+    display:flex;
+    flex-direction:column;
+}
+
+.all-boxes .boxes-row-one, .all-boxes .boxes-row-two{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.bottom-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.top-text{
+    display:flex;
+    flex-direction:column;
+}
+
+}
+
 
 @media(max-width: 500px) {
-   
+    .all-boxes{
+        display:flex;
+        flex-direction:column;
+        flex-wrap: wrap;
     }
+.header{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.navButton{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+nav{
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+footer nav{
+    width:100%;
+}
+
+}
