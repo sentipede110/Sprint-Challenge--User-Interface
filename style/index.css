@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 1px solid grey;
+	border: 0px solid grey;
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
@@ -58,16 +58,16 @@ body {
     width: 80%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
-    font-size:1.6rem;
+    font-size:1.5rem;
 }
 h1 {
-    font-size:2.5rem;
+    font-size: 3rem;
     margin-bottom: 1%;
     font-family: 'Rubik', sans-serif;
 }
 
 h2, h3, h4, h5 {
-    font-size:1.5rem;
+    font-size: 2rem;
     margin-bottom: 1%;
     font-family: 'Rubik', sans-serif;
 }
@@ -96,6 +96,10 @@ header nav{
     flex:0 0 auto;
 }
 
+.logo img{
+    object-fit: contain;
+}
+
 .navButton{
     width: 80%;
     display:flex;
@@ -105,6 +109,8 @@ header nav{
 .navButton a{
     text-decoration: none;
     color:black;
+    font-size: 1.25rem;
+    padding:1%;
 }
 
 .top-content{
@@ -267,7 +273,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.25rem;
 }
 
 footer nav div{
@@ -341,6 +347,10 @@ nav{
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+}
+
+nav a{
+    padding:1%;
 }
 
 .bottom-content div{
