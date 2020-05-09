@@ -130,76 +130,109 @@ header nav{
 }
 
 .all-boxes{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.box{
-    width: 120px;
-    height: 120px;
-    border: 0px solid purple;
-    margin: 1%;
-}
-
-.boxes-row-one, .boxes-row-two{
-    width:80%;
+    width:100%;
     display:flex;
+    flex-wrap: wrap;
     justify-content:space-between;
-}
-
-.boxes-row-one > div, .boxes-row-two > div{
-    display:flex;
     align-items: center;
     justify-content: center;
 }
 
+.all-boxes .box{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex: 0 0 auto;
+}
+
 #one{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 1%;
     background-color: teal;
     color: #ffffff
 }
 
 #two{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 1%;
     background-color: gold;
     color: white
+    
 }
 
 #three{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 1%;
     background-color: cadetblue;
     color: white
 }
 
 #four{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 1%;
     background-color: coral;
     color: white
 }
 
 #five{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 1%;
     background-color: crimson;
     color: white
 }
 
 #six{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 1%;
     background-color: forestgreen;
     color: white
 }
 
 #seven{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 1%;
     background-color: darkorchid;
     color: white
 }
 
 #eight{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 1%;
     background-color: hotpink;
     color: white
 }
 
 #nine{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 1%;
     background-color: indigo;
     color: white
 }
 
 #ten{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 1%;
     background-color: dodgerblue;
     color: white
 }
@@ -243,24 +276,12 @@ footer nav a {
 
 
 @media(max-width: 768px) {
-.all-boxes{
-    display:flex;
-    flex-direction:column;
-}
 
-.all-boxes .boxes-row-one, .all-boxes .boxes-row-two{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-/*.boxes-row-one>.c-one, .boxes-row-two>.c-one{
+.all-boxes .box{
     display:flex;
-    flex-direction:column;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;*/
+    justify-content: space-between;
+    flex: 0 0 auto;
 }
 
 .bottom-content{
@@ -281,19 +302,25 @@ footer nav{
 footer nav div{
     width:0%;
 }
+}
 
 @media(max-width: 480px) {
-    .all-boxes{
+    .all-boxes .box{
         display:flex;
-        flex-direction:column;
-        flex-wrap: wrap;
+        flex-basis: 51%;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        flex: 0 0 auto;
     }
-.header{
+
+    .header{
     display:flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
 }
+
 .navButton{
     padding:1%;
     display:flex;
@@ -324,5 +351,4 @@ footer nav{
 footer nav div{
     width:0%;
 }
-
 }
