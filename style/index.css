@@ -68,7 +68,7 @@ h1 {
 
 h2, h3, h4, h5 {
     font-size: 2rem;
-    margin-bottom: 1%;
+    margin: 2%;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -143,10 +143,6 @@ header nav{
 
 .top-container > h2{
     margin-bottom: 3%;
-}
-
-h1{
-  margin-top: 1px dotted black;
 }
 
 .all-boxes{
@@ -264,16 +260,19 @@ h1{
     align-items: center;
 }
 
-.bottom-container{
-    margin:2%
-}
-
-.bottom-container > h3{
-    margin-bottom: 3%;
-}
-
 footer {
     background: black;
+}
+
+.bottom-container-top > h3{
+margin-top: 5%;
+display: flex;
+flex-wrap: wrap;
+}
+
+.bottom-content > div{
+    padding:1%;
+    margin: 1%;
 }
 
 footer nav {
@@ -294,6 +293,9 @@ footer nav a {
     text-decoration: none;
 }
 
+nav{
+    margin:3%;
+}
 
 @media (max-width: 768px){
 
@@ -318,7 +320,7 @@ footer nav a {
     width: 120px;
     height: 120px;
     border: 0px solid purple;
-    margin: 5.1%;
+    margin: 1.5% 5.1%;
     background-color: teal;
     color: #ffffff
 }
@@ -327,7 +329,7 @@ footer nav a {
     width: 120px;
     height: 120px;
     border: 0px solid purple;
-    margin: 5.1%;
+    margin: 1.5% 5.1%;
     background-color: gold;
     color: white
     
@@ -337,6 +339,7 @@ footer nav a {
     width: 120px;
     height: 120px;
     border: 0px solid purple;
+    margin: 1.5% 5.1%;
     margin: 5.1%;
     background-color: cadetblue;
     color: white
@@ -346,6 +349,7 @@ footer nav a {
     width: 120px;
     height: 120px;
     border: 0px solid purple;
+    margin: 1.5% 5.1%;
     margin: 5.1%;
     background-color: coral;
     color: white
@@ -355,7 +359,7 @@ footer nav a {
     width: 120px;
     height: 120px;
     border: 0px solid purple;
-    margin: 5.1%;
+    margin: 1.5% 5.1%;
     background-color: crimson;
     color: white
 }
@@ -364,7 +368,7 @@ footer nav a {
     width: 120px;
     height: 120px;
     border: 0px solid purple;
-    margin: 5.1%;
+    margin: 1.5% 5.1%;
     background-color: forestgreen;
     color: white
 }
@@ -373,7 +377,7 @@ footer nav a {
     width: 120px;
     height: 120px;
     border: 0px solid purple;
-    margin: 5.1%;
+    margin: 1.5% 5.1%;
     background-color: darkorchid;
     color: white
 }
@@ -382,7 +386,7 @@ footer nav a {
     width: 120px;
     height: 120px;
     border: 0px solid purple;
-    margin: 5.1%;
+    margin: 1.5% 5.1%;
     background-color: hotpink;
     color: white
 }
@@ -391,7 +395,7 @@ footer nav a {
     width: 120px;
     height: 120px;
     border: 0px solid purple;
-    margin: 5.1%;
+    margin: 1.5% 5.1%;
     background-color: indigo;
     color: white
 }
@@ -400,9 +404,14 @@ footer nav a {
     width: 120px;
     height: 120px;
     border: 0px solid purple;
-    margin: 5.1%;
+    margin: 1.5% 5.1%;
     background-color: dodgerblue;
     color: white
+
+.bottom-content > div{
+    display:flex;
+    flex-wrap: flex-wrap;
+}
 
 footer nav{
     width:100%;
