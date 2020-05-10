@@ -61,7 +61,7 @@ body {
     font-size:1.5rem;
 }
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1%;
     font-family: 'Rubik', sans-serif;
 }
@@ -113,15 +113,19 @@ header nav{
     padding:1%;
 }
 
+.middle-title > h1{
+    margin:2%;
+}
+
 .top-content{
     width: 100%;
     height: 30%;
     padding:0.5%;
 }
 
-.top-img{
+.top-img > img{
     width:100%;
-    height: 50%;
+    max-height: 10vw;
     display: flex;
     justify-content: center;
 }
@@ -141,6 +145,10 @@ header nav{
     margin-bottom: 3%;
 }
 
+h1{
+  margin-top: 1px dotted black;
+}
+
 .all-boxes{
     width:100%;
     display:flex;
@@ -148,14 +156,15 @@ header nav{
     justify-content:space-evenly;
     align-items: center;
     justify-content: center;
+    bottom: margin 2%;
 }
 
-.all-boxes .box{
+.all-boxes > .box{
     display:flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     align-self: center;
-    flex: 0 0 auto;
 }
 
 #one{
@@ -286,13 +295,13 @@ footer nav a {
 }
 
 
-@media(max-width: 768px) {
+@media (max-width: 768px){
 
-.all-boxes .box{
+.all-boxes > .box{
     display:flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    flex: 0 0 auto;
 }
 
 .bottom-content{
@@ -304,6 +313,97 @@ footer nav a {
     display:flex;
     flex-direction:column;
 }
+
+#one{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 5.1%;
+    background-color: teal;
+    color: #ffffff
+}
+
+#two{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 5.1%;
+    background-color: gold;
+    color: white
+    
+}
+
+#three{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 5.1%;
+    background-color: cadetblue;
+    color: white
+}
+
+#four{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 5.1%;
+    background-color: coral;
+    color: white
+}
+
+#five{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 5.1%;
+    background-color: crimson;
+    color: white
+}
+
+#six{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 5.1%;
+    background-color: forestgreen;
+    color: white
+}
+
+#seven{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 5.1%;
+    background-color: darkorchid;
+    color: white
+}
+
+#eight{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 5.1%;
+    background-color: hotpink;
+    color: white
+}
+
+#nine{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 5.1%;
+    background-color: indigo;
+    color: white
+}
+
+#ten{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 5.1%;
+    background-color: dodgerblue;
+    color: white
+
 footer nav{
     width:100%;
     display: flex;
