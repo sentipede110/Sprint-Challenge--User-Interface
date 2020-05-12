@@ -449,6 +449,10 @@ footer nav div{
         flex: 0 0 auto;
     }
 
+    .all-boxes #one, .all-boxes #two, .all-boxes #three, .all-boxes #four, .all-boxes #five, .all-boxes #six, .all-boxes #seven, .all-boxes #eight, .all-boxes #nine, .all-boxes #ten{
+        margin: 5px 60px;
+    }
+
     .header{
     display:flex;
     flex-direction: column;
