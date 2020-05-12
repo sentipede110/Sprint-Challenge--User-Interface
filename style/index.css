@@ -18,18 +18,35 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	border: 0px solid grey;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    box-sizing:border-box;
+    max-width:100%;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
 body {
-	line-height: 1;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+body {
+    line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -47,88 +64,237 @@ table {
 	border-spacing: 0;
 }
 
-* {
-    box-sizing: border-box;
+html{
+    height:100%;
+    font-size: 62.5%;
 }
 
-html, body {
+body {
+    width: 80%;
     height: 100%;
+    margin: 0 0 0 10vw;
     font-family: 'Roboto', sans-serif;
+    font-size:1.5rem;
+    display: inline-block;
+    max-width: 1100px;
 }
 
-h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1%;
     font-family: 'Rubik', sans-serif;
 }
 
+h2, h3, h4, h5 {
+    font-size: 2rem;
+    margin: 0%;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 3%;
+}
+
 p {
-    line-height: 1.4;
+    line-height: 120%;
 }
 
 .container {
-    width: 800px;
     margin: 0 auto;
 }
 
-.top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-}
-
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
-}
-
-.middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-}
-
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
-}
-
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
+header nav{
+    padding:0.5%;
+    width: 80%;
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
     align-items: center;
+}
+
+.logo{
+    width:20%;
+    display:flex;
+    flex:0 0 auto;
+}
+
+.logo img{
+    object-fit: contain;
+}
+
+.navButton{
+    width: 80%;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.navButton a{
+    text-decoration: none;
+    color:black;
+    font-size: 1.25rem;
+    padding:1%;
+}
+
+.middle-title > h1{
+    margin:2%;
+}
+
+.top-content{
+    width: 100%;
+    height: 30%;
+    padding:0.5%;
+}
+
+.top-img > img{
+    width:100%;
+    max-height: 9vw;
+    display: flex;
     justify-content: center;
 }
 
-.bottom-content {
+.top-text{
+    width:100%;
+    height:50%;
+    padding:1.5%;
+    display:flex;
+}
+
+.top-container{
+    margin: 2.5%;
+}
+
+.top-container > h2{
+    margin-bottom: 3%;
+}
+
+.all-boxes{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    justify-content: center;
+    bottom: margin 2%;
+}
+
+.all-boxes > .box{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+#one{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 2.5%;
+    background-color: teal;
+    color: #ffffff
+}
+
+#two{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 2.5%;
+    background-color: gold;
+    color: white
+    
+}
+
+#three{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 2.5%;
+    background-color: cadetblue;
+    color: white
+}
+
+#four{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 2.5%;
+    background-color: coral;
+    color: white
+}
+
+#five{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 2.5%;
+    background-color: crimson;
+    color: white
+}
+
+#six{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 2.5%;
+    background-color: forestgreen;
+    color: white
+}
+
+#seven{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 2.5%;
+    background-color: darkorchid;
+    color: white
+}
+
+#eight{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 2.5%;
+    background-color: hotpink;
+    color: white
+}
+
+#nine{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 2.5%;
+    background-color: indigo;
+    color: white
+}
+
+#ten{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 2.5%;
+    background-color: dodgerblue;
+    color: white
+}
+
+.bottom-content{
     display: flex;
-    margin: 0 2% 20px;
     justify-content: space-around;
-}
-
-.bottom-content .text-container {
-    padding-right: 4%;
-}
-
-.bottom-content .text-container:last-child {
-    padding-right: 0;
+    align-items: center;
 }
 
 footer {
-    width: 100%;
     background: black;
+}
+
+.bottom-container-top > h3{
+margin-top: 5%;
+display: flex;
+flex-wrap: wrap;
+}
+
+.bottom-content > div{
+    padding:1%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
 }
 
 footer nav {
@@ -137,10 +303,209 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.25rem;
+}
+
+footer nav div{
+    width:40%;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+nav{
+    margin:3%;
+}
+
+@media (max-width: 768px){
+
+.all-boxes > .box{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top-text{
+    display:flex;
+    flex-direction:column;
+}
+
+#one{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 1.5% 5.1%;
+    background-color: teal;
+    color: #ffffff
+}
+
+#two{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 1.5% 5.1%;
+    background-color: gold;
+    color: white
+    
+}
+
+#three{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 1.5% 5.1%;
+    margin: 5.1%;
+    background-color: cadetblue;
+    color: white
+}
+
+#four{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 1.5% 5.1%;
+    margin: 5.1%;
+    background-color: coral;
+    color: white
+}
+
+#five{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 1.5% 5.1%;
+    background-color: crimson;
+    color: white
+}
+
+#six{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 1.5% 5.1%;
+    background-color: forestgreen;
+    color: white
+}
+
+#seven{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 1.5% 5.1%;
+    background-color: darkorchid;
+    color: white
+}
+
+#eight{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 1.5% 5.1%;
+    background-color: hotpink;
+    color: white
+}
+
+#nine{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 1.5% 5.1%;
+    background-color: indigo;
+    color: white
+}
+
+#ten{
+    width: 120px;
+    height: 120px;
+    border: 0px solid purple;
+    margin: 1.5% 5.1%;
+    background-color: dodgerblue;
+    color: white
+
+footer nav{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer nav div{
+    width:0%;
+}
+}
+
+@media(max-width: 480px) {
+    .all-boxes .box{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        flex: 0 0 auto;
+    }
+
+    .all-boxes #one, .all-boxes #two, .all-boxes #three, .all-boxes #four, .all-boxes #five, .all-boxes #six, .all-boxes #seven, .all-boxes #eight, .all-boxes #nine, .all-boxes #ten{
+        margin: 5px 60px;
+    }
+
+    .header{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.top-content > .top-img > img{
+    width:100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.navButton{
+    padding:1%;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+nav a{
+    padding:1%;
+}
+
+.bottom-content div{
+    padding:1.5%;
+}
+
+footer nav{
+    padding:1%;
+    width:100%;
+}
+
+footer nav div{
+    width:0%;
+}
+
+.bottom-content{
+    padding:1%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
 }
